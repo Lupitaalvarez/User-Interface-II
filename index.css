@@ -4,8 +4,14 @@ nav {
   display: flex;
   justify-content:space-between;
   align-items: center;
+  border: solid black 1px;
 }
-
+.links {
+  border: solid black 1px;
+}
+h1 {
+  border: solid black 1px;
+}
 .topsec {
   display: flex;
   justify-content: center;
@@ -36,9 +42,9 @@ footer {
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .portfolioel {
@@ -64,5 +70,74 @@ button a {
   color: inherit;
 }
 
+/* MEDIA QUERIES */
+
+/* 800 */
+
+@media(max-width: 800px) {
+  header {
+    display: block;
+  }
+  nav {
+    display: block;
+    text-align: center;
+  }
+  .links {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topsec {
+    background-position:left center;
+  }
+  .row {
+    
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    
+  }
+  
+}
+
+/* PHONES */
+
+@media(max-width: 500px) {
+  .row {
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .links {
+    width: 100%;
+  }
+  h1 {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .topsec {
+    background-image:none;
+    background-color:#dddee0;
+    justify-content: center;
+    height:auto;
+  }
+  .topsec button {
+    margin: 0;
+    width: 90%;
+  }
+
+  .portfolioel {
+    width: 100%;
+  }
+  
+}
       
       
